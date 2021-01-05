@@ -48,4 +48,4 @@ for i in range(len(x1)):
     mdb.models['RVE'].rootAssembly.SetFromNodeLabels(name='set_x1_%03d'%(i),nodeLabels=(('RVE-1',(x1[i],),),),)
     mdb.models['RVE'].rootAssembly.SetFromNodeLabels(name='set_x2_%03d'%(i),nodeLabels=(('RVE-1',(x2[i],),),),)
     mdb.models['RVE'].Equation(name='Constraintx-%03d'%(i),terms=((-1.0,'set_x1_%03d'%(i),1),(1.0,'set_x2_%03d'%(i),1),(-1.0,'Set-rf1',1)))
-'''
+
